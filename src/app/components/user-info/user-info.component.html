@@ -15,8 +15,10 @@
                     <p class="name">{{ person.name }}</p>
                     <p class="phoneNo">{{ person.phoneNo }}</p>
                     <p class="adress">{{ person.adress }}</p>
-                    <p class="count">Call</p>
-                    <button class="submit-button">Remove</button>
+                    <p class="count" *ngIf="person.phoneNo">
+                        Call
+                    </p>
+                    <button (click)="removeContact(person)" class="submit-button">Remove</button>
                 </div>
             </div>
         </div>

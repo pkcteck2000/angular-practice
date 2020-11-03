@@ -30,6 +30,14 @@ export class UserInfoComponent implements OnInit {
     contactList.unshift(tempData);
   }
 
+  removeContact = (person) => {
+    this.contactList.forEach((item, index) => {
+      if (item === person) {
+        this.contactList.splice(index, 1)
+      }
+    })
+  }
+
   ngOnInit(): void {
   }
 
