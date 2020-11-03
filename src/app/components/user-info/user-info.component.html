@@ -1,13 +1,24 @@
-<div class="user-info-container" *ngFor="let person of contactList">
-    <div class="user-info">
-        <div class="userPic">
-            <img [src]="person.userImage" class="image" alt="user-pic" />
-        </div>
-        <div class="details">
-            <p class="name">{{person.name}} </p>
-            <p class="phoneNo">{{person.phoneNo}}</p>
-            <p class="adress">{{person.adress}}</p>
-            <p class="count">Call</p>
+<div class="container">
+    <div class="input-field">
+        <input [(ngModel)]="userInfo.name" class="input" placeholder="Enter name" />
+        <input [(ngModel)]="userInfo.phoneNo" class="input" placeholder="Enter hone number" />
+        <input [(ngModel)]="userInfo.adress" class="input" placeholder="Enter Adress" />
+        <button (click)="addToList()" class="submit-button">Add Person</button>
+    </div>
+    <div class="info-container">
+        <div class="user-info-container" *ngFor="let person of contactList">
+            <div class="user-info">
+                <div class="userPic">
+                    <img [src]="person.userImage" class="image" alt="user-pic" />
+                </div>
+                <div class="details">
+                    <p class="name">{{ person.name }}</p>
+                    <p class="phoneNo">{{ person.phoneNo }}</p>
+                    <p class="adress">{{ person.adress }}</p>
+                    <p class="count">Call</p>
+                    <button class="submit-button">Remove</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>

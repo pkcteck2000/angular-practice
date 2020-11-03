@@ -1,46 +1,63 @@
-.user-info-container {
+.container
+{
+  margin-top: 70px;
+  margin-left: 20px;
 
-    margin-top: 70px;
-    margin-left: 20px;
+  .input-field{
+    .input {
+      margin: 10px;
+    }
+  }
+  
+  .info-container {
     display: flex;
-
-    .user-info {
-      background: #e2e6ad;
+    flex-wrap: wrap;
+    flex-direction: row;
+  
+    .user-info-container {
+      margin-top: 70px;
+      margin-left: 20px;
       display: flex;
-      justify-content: space-around;
-      flex-direction: row;
-      width: 300px;
-      padding: 10px;
   
-      .userPic {
+      .user-info {
+        background: #e2e6ad;
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-
-        .image {
-          height: 100px;
-          width: 100px;
-        }
-      }
+        justify-content: space-around;
+        flex-direction: row;
+        width: 400px;
+        padding: 10px;
+    
+        .userPic {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
   
-      .details {
-        font-size: 15px;
-
-        .name {
-          color: #f00;
+          .image {
+            height: 100px;
+            width: 100px;
+          }
         }
+    
+        .details {
+          font-size: 15px;
   
-        .phoneNo {
-          color: #00f;
-        }
+          .name {
+            color: #f00;
+          }
+    
+          .phoneNo {
+            color: #00f;
+          }
+    
+          .adress {
+            color: #f0f;
+          }
   
-        .adress {
-          color: #f0f;
-        }
-
-        .count {
-            color: #000
+          .count {
+              color: #000
+          }
         }
       }
     }
   }
+}

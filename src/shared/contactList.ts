@@ -24,5 +24,23 @@ export const contactList: IuserInfo[] = [
         phoneNo: 8970296514,
         adress: "Kalladka",
         userImage: "https://static.thenounproject.com/png/17241-200.png"
+    },
+    {
+        name: "Venkat",
+        phoneNo: 8970296514,
+        adress: "Kalladka",
+        userImage: "https://static.thenounproject.com/png/17241-200.png"
+    },
+    {
+        name: "Venkat",
+        phoneNo: 8970296514,
+        adress: "Kalladka",
+        userImage: "https://static.thenounproject.com/png/17241-200.png"
+    },
+    {
+        name: "Venkat",
+        phoneNo: 8970296514,
+        adress: "Kalladka",
+        userImage: "https://static.thenounproject.com/png/17241-200.png"
     }
 ]

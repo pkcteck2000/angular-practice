@@ -12,17 +12,22 @@ export class UserInfoComponent implements OnInit {
   clickCount: number = 0;
   contactList: IuserInfo[] = contactList;
   
-  userIfo: IuserInfo = {
+  userInfo: IuserInfo = {
     name : "",
     phoneNo : 0,
     adress: "",
-    userImage: ""
+    userImage: "https://static.thenounproject.com/png/17241-200.png"
   };
 
   constructor() { }
   
   placeCall = () => {
     //TODO: place a call when invoke this function
+  }
+
+  addToList = () => {
+    const tempData: IuserInfo = { ...this.userInfo }
+    contactList.unshift(tempData);
   }
 
   ngOnInit(): void {
