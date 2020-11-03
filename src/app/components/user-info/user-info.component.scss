@@ -1,40 +1,22 @@
-.container
+.container-fluid
 {
   margin-top: 70px;
-  margin-left: 20px;
-
-  .input-field{
-    .input {
-      margin: 10px;
-    }
-  }
   
   .info-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  
+
     .user-info-container {
-      margin-top: 70px;
-      margin-left: 20px;
-      display: flex;
-  
+      width: 50px;
+
       .user-info {
         background: #e2e6ad;
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-        width: 400px;
-        padding: 10px;
-    
+
         .userPic {
           display: flex;
           justify-content: center;
-          flex-direction: column;
-  
-          .image {
-            height: 100px;
-            width: 100px;
+          flex-direction: column;;
+          .personImage {
+            height: 80px;
+            width: 80px;
           }
         }
     
