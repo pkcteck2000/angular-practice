@@ -1,0 +1,16 @@
+<div class="user-info-container">
+    <div class="user-info">
+        <div class="userPic">
+            <img [src]="userIfo.userImage" class="image" alt="user-pic" />
+        </div>
+        <div class="details">
+            <p class="name">{{userIfo.name}} </p>
+            <p class="phoneNo">{{userIfo.phomeNo}}</p>
+            <p class="adress">{{userIfo.adress}}</p>
+            <p class="count">{{clickCount}}</p>
+        </div>
+    </div>
+    <div class="click-button" (click)="counterTrack()">
+        <button>Count Clicks</button>
+    </div>
+</div>
