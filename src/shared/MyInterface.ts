@@ -1,6 +1,6 @@
 export  interface IuserInfo {
     name: string,
-    phomeNo: number,
+    phoneNo: number,
     adress: string,
     userImage?: string
 };

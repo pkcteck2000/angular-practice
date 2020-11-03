@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IuserInfo } from './MyInterface';
+import { IuserInfo } from '../../../shared/MyInterface';
+import { contactList } from '../../../shared/contactList';
 
 @Component({
   selector: 'app-user-info',
@@ -9,19 +10,19 @@ import { IuserInfo } from './MyInterface';
 export class UserInfoComponent implements OnInit {
 
   clickCount: number = 0;
-
+  contactList: IuserInfo[] = contactList;
+  
   userIfo: IuserInfo = {
-    name : "Premnath",
-    phomeNo : 8970296514,
-    adress: "Mangaluru",
-    userImage: "https://static.thenounproject.com/png/17241-200.png"
+    name : "",
+    phoneNo : 0,
+    adress: "",
+    userImage: ""
   };
 
   constructor() { }
-
-  //Incrimet counter
-  counterTrack = () => {
-    this.clickCount += 1;
+  
+  placeCall = () => {
+    //TODO: place a call when invoke this function
   }
 
   ngOnInit(): void {

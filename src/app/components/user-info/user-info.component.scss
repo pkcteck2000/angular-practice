@@ -1,25 +1,31 @@
 .user-info-container {
 
-    margin-top: 60px;
+    margin-top: 70px;
     margin-left: 20px;
     display: flex;
-    flex-direction: column;
-  
+
     .user-info {
       background: #e2e6ad;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
+      flex-direction: row;
       width: 300px;
-      padding: 12px;
+      padding: 10px;
   
-      .image {
-        height: 150px;
-        width: 150px;
+      .userPic {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        .image {
+          height: 100px;
+          width: 100px;
+        }
       }
   
       .details {
-        font-size: 25px;
-  
+        font-size: 15px;
+
         .name {
           color: #f00;
         }
@@ -36,19 +42,5 @@
             color: #000
         }
       }
-    }
-    .click-button {
-        width: 100%;
-        background-color: yellowgreen;
-        display: flex;
-        justify-content: center;
-        padding: 0.5em 0em 0.5em 0em;
-
-        button {
-            background: yellowgreen;
-            border: 0;
-            outline: none;
-            font-size: 2em;
-        }
     }
   }
