@@ -1,16 +1,13 @@
-<div class="user-info-container">
+<div class="user-info-container" *ngFor="let person of contactList">
     <div class="user-info">
         <div class="userPic">
-            <img [src]="userIfo.userImage" class="image" alt="user-pic" />
+            <img [src]="person.userImage" class="image" alt="user-pic" />
         </div>
         <div class="details">
-            <p class="name">{{userIfo.name}} </p>
-            <p class="phoneNo">{{userIfo.phomeNo}}</p>
-            <p class="adress">{{userIfo.adress}}</p>
-            <p class="count">{{clickCount}}</p>
+            <p class="name">{{person.name}} </p>
+            <p class="phoneNo">{{person.phoneNo}}</p>
+            <p class="adress">{{person.adress}}</p>
+            <p class="count">Call</p>
         </div>
-    </div>
-    <div class="click-button" (click)="counterTrack()">
-        <button>Count Clicks</button>
     </div>
 </div>
