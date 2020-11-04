@@ -21,7 +21,7 @@
         }
     
         .details {
-          font-size: 15px;
+          font-size: 18px;
   
           .name {
             color: #f00;
@@ -35,8 +35,14 @@
             color: #f0f;
           }
   
-          .count {
-              color: #000
+          .contact {
+              font-size: 1.5em;
+              .call {
+                color: green;
+              }
+              .mail {
+                color: red;
+              }
           }
         }
       }

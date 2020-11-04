@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IuserInfo } from '../../../shared/MyInterface';
 import { contactList } from '../../../shared/contactList';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-user-info',
@@ -9,12 +10,16 @@ import { contactList } from '../../../shared/contactList';
 })
 export class UserInfoComponent implements OnInit {
 
+  faCoffee = faPhone;
+  faInbox = faEnvelope;
+
   clickCount: number = 0;
   contactList: IuserInfo[] = contactList;
   
   userInfo: IuserInfo = {
     name : "",
     phoneNo : 0,
+    email: "",
     adress: "",
     userImage: "https://static.thenounproject.com/png/17241-200.png"
   };
