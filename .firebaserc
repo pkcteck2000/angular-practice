@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "myfirstangular-cc286": {
+      "hosting": {
+        "my-first-app": [
+          "myfirstangular-cc286"
+        ]
+      }
+    }
+  }
+}
