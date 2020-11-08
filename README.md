@@ -1,3 +1,3 @@
-## Link for projects
+# Link for projects
 
-1. My First App [Angular CLI](https://github.com/premrobosoft/angular-practice/tree/MyFirstApp).
+## 1. [My First App](https://github.com/premrobosoft/angular-practice/tree/MyFirstApp).
